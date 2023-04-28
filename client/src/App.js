@@ -12,6 +12,8 @@ import {
 } from "react-router-dom";
 import Merchant from "./pages/Merchant";
 import Product from "./pages/Product";
+import ProductID from "./pages/ProductID";
+import ProductEdit from "./pages/ProductEdit";
 
 const router = createBrowserRouter([
   {path: "/", element: <HomePage />},
@@ -20,6 +22,8 @@ const router = createBrowserRouter([
   {path: "/login", element: <Login />},
   {path: "/merchant", element: <Merchant />},
   {path: "/product", element: <Product />},
+  {path: "/product-detail/:id", element: <ProductID />},
+  {path: "/product-edit/:id", element: <ProductEdit />},
 ]);
 
 function App() {
